@@ -19,9 +19,9 @@ const EditTask = () => {
   };
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    console.log('edit');
+    // console.log('edit');
     try {
-        console.log(task);
+        // console.log(task);
       await axios.patch(`http://localhost:4000/api/v1/tasks/${taskID}`, task);
       console.log('patch success');
       setShowEditStatus(true);
